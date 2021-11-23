@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=Montserrat:wght@200;300;400&family=Roboto:wght@100;300;400;500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --blue: #CAEBF2;
+  --dark-gray: #a9a9a9;
+  --red: #ff3b3f;
+  --light-gray: #efefef;
+  --white: snow;
+  --black: #262228;
+  --roboto:'Roboto', sans-serif;
+  --lato:'Lato', sans-serif;
+  --mont:'Montserrat', sans-serif;
+
+}
+
+body {
+  background-color: var(--white);
+}
+
+.nav-container {
+    width: 100%;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+    font-family: var(--lato);
+
+}
+
+#navbar-logo {
+    color: var(--black);
+    justify-self: start;
+    margin-left: 20px;
+}
+
+#navbar-logo {
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    list-style: none;
+    text-align: center;
+    width: 50%;
+    justify-self: end;
+   
+}
+
+.nav-links {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    color: var(--red);
+    transition: all 0.2s ease-out;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: var(--black);
+}
